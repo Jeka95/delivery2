@@ -33,8 +33,15 @@ const Drinks = (props) => {
             return arr
          })
       }
+      props.favorite.map((elem) => {
+         const isSameName = (element) => element.name === elem.name;
+         let num = arr.find(isSameName);
+         if (num !== undefined) {
+            num.bool = true;
+         }
+      })
       setDrinks(arr)
-   }, [props.items]);
+   }, [props]);
 
    return (
       <div className="content">
@@ -55,6 +62,7 @@ const Drinks = (props) => {
 const mapStateToProps = (state) => {
    return {
       items: state.itemsServer,
+      favorite: state.favorite,
    }
 }
 const mapDispatchToProps = (dispatch) => {

@@ -19,10 +19,6 @@ const Salad = (props) => {
                props.GetItems(response.data);
                response.data.map((elem) => {
                   if (elem.id === "salad") {
-
-
-
-
                      return arr.push(elem)
                   }
                   return arr
@@ -35,10 +31,16 @@ const Salad = (props) => {
             }
             return arr
          })
-
       }
+      props.favorite.map((elem) => {
+         const isSameName = (element) => element.name === elem.name;
+         let num = arr.find(isSameName);
+         if (num !== undefined) {
+            num.bool = true;
+         }
+      })
       setSalads(arr);
-   }, [props.items]);
+   }, [props]);
 
    return (
       <div className="content">
