@@ -34,8 +34,8 @@ const Soups = (props) => {
             }
             return arr
          })
-         setSoups(arr)
       }
+      setSoups(arr)
    }, [props.items]);
 
    return (

@@ -32,8 +32,8 @@ const Drinks = (props) => {
             }
             return arr
          })
-         setDrinks(arr)
       }
+      setDrinks(arr)
    }, [props.items]);
 
    return (

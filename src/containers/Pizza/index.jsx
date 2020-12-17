@@ -30,8 +30,8 @@ const Pizza = (props) => {
             }
             return arr
          })
-         setPizzas(arr)
       }
+      setPizzas(arr);
    }, [props.items]);
 
    return (

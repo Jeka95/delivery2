@@ -33,8 +33,8 @@ const SushiSet = (props) => {
             }
             return arr
          })
-         setSushiSet(arr)
       }
+      setSushiSet(arr)
    }, [props.items]);
 
    return (

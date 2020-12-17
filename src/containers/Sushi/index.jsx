@@ -34,8 +34,8 @@ const Sushi = (props) => {
             }
             return arr
          })
-         setRools(arr)
       }
+      setRools(arr)
    }, [props.items]);
 
    return (

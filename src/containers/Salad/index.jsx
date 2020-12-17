@@ -19,6 +19,10 @@ const Salad = (props) => {
                props.GetItems(response.data);
                response.data.map((elem) => {
                   if (elem.id === "salad") {
+
+
+
+
                      return arr.push(elem)
                   }
                   return arr
@@ -31,12 +35,14 @@ const Salad = (props) => {
             }
             return arr
          })
-         setSalads(arr)
+
       }
+      setSalads(arr);
    }, [props.items]);
 
    return (
       <div className="content">
+         {console.log("salads-->", salads)}
          <div className="title">салати</div>
          <div className="food__items">
             {
@@ -54,6 +60,7 @@ const Salad = (props) => {
 const mapStateToProps = (state) => {
    return {
       items: state.itemsServer,
+      favorite: state.favorite,
    }
 }
 const mapDispatchToProps = (dispatch) => {
