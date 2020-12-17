@@ -61,6 +61,7 @@ class Shares extends React.Component {
                   this.state.items.map((food) => {
                      return (
                         <FoodItem key={food.urlId} food={food} />
+
                      )
                   })
                }

@@ -21,7 +21,7 @@ const Sushi = (props) => {
             .then(response => {
                props.GetItems(response.data);
                response.data.map((elem) => {
-                  if (elem.id === "sush") {
+                  if (elem.id === "sushi") {
                      return arr.push(elem)
                   }
                   return arr
