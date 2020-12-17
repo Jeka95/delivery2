@@ -12,7 +12,6 @@ import Like from '../../assets/like';
 class FoodItem extends React.Component {
 
    render() {
-
       return (
          <div className="food-block">
 

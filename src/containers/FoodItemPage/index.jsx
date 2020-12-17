@@ -56,7 +56,6 @@ const FoodItemPage = (props) => {
                      <span className="product__price">{item[0].price} грн</span>
                      <span className="product__weight">{item[0].weight} г</span>
                      <button className="food-block__btnAdd" onClick={() => { props.AddToCard(item[0]) }} >замовити</button>
-                     {console.log("усе вийшло", item[0].ingredients.translit())}
                   </div>
                </div >
                <div className="product__right">
