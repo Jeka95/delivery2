@@ -1,0 +1,56 @@
+.order {
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+
+   &__item {
+      width: 320px;
+
+      margin: 0 5px 5px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      border: 3px solid rgb(216, 212, 212);
+      border-radius: 20px;
+   }
+   &__img {
+      align-self: center;
+      width: 75px;
+      height: 75px;
+   }
+   &__number {
+      font-weight: 700;
+      align-self: center;
+      margin-bottom: 8px;
+   }
+   &__name {
+      margin-bottom: 8px;
+   }
+   &__tel {
+      margin-bottom: 8px;
+   }
+   &__adress {
+      margin-bottom: 5px;
+   }
+   &__curadd {
+      margin-bottom: 8px;
+   }
+   &__orders {
+      text-decoration: underline;
+      margin-bottom: 8px;
+   }
+   &__ordersitems {
+      margin-bottom: 8px;
+   }
+   &__orderitem {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+   }
+   &__price {
+      border-top: 1px solid #000;
+      display: flex;
+      padding-top: 5px;
+      justify-content: space-between;
+   }
+}

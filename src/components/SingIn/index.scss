@@ -1,0 +1,44 @@
+.auth {
+   margin-right: 15px;
+   display: flex;
+   flex-direction: column;
+
+   &__btn {
+      padding: 5px;
+      background-color: #364926;
+      font-size: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      color: #f99f1b;
+      font-weight: 600;
+      svg {
+         width: 25px;
+         height: 25px;
+         fill: red;
+      }
+      p {
+         display: flex;
+         align-items: center;
+      }
+   }
+   &__personal-account {
+      border-radius: 10px;
+      background: #364926;
+      padding: 10px;
+      svg {
+         fill: #f99f1b;
+      }
+   }
+}
+.fav-icon {
+   fill: red;
+   width: 50px;
+   height: 50px;
+}
+@media (max-width: 400px) {
+   .auth {
+      &__title {
+         display: none;
+      }
+   }
+}

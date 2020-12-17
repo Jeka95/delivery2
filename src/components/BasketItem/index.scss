@@ -1,0 +1,39 @@
+.basket-block {
+   width: 300px;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   &__image {
+      margin-right: 5px;
+      max-height: 80px;
+   }
+
+   &__discription {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 20px;
+   }
+   &__subtitle {
+   }
+   &__weight {
+      font-size: 14px;
+      font-family: "Dancing Script", cursive;
+   }
+
+   &__bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+   }
+   &__number {
+      font-size: 14px;
+      font-family: "Langar", cursive;
+   }
+
+   &__price {
+      font-size: 12px;
+      font-family: "Langar", cursive;
+   }
+}

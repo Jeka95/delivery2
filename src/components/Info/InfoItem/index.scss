@@ -1,0 +1,30 @@
+.info {
+   display: flex;
+   justify-content: flex-end;
+
+   &__items {
+      display: flex;
+   }
+   &__item {
+      margin-right: 10px;
+      text-transform: uppercase;
+      color: #ccc2c2;
+      font-weight: 600;
+      list-style: none;
+      border-bottom: 2px solid #d3cece;
+      transition-duration: 500ms;
+      :hover {
+         color: #f1ece3;
+         border-bottom: 2px solid #f99f1b;
+      }
+   }
+   &__linc {
+      text-decoration: none;
+      color: #ffffff;
+   }
+}
+@media (max-width: 786px) {
+   .info {
+      display: none;
+   }
+}

@@ -1,0 +1,38 @@
+.header__basketmob {
+   font-size: 14px;
+   display: flex;
+   flex-direction: column;
+   z-index: 100;
+   background-color: #f99f1b;
+   width: 80px;
+   height: 80px;
+   align-items: center;
+   justify-content: center;
+   img {
+      width: 30px;
+      height: 30px;
+   }
+}
+.header__countermob {
+   font-family: "Langar", cursive;
+   font-weight: 400;
+   line-height: 20px;
+   width: 20px;
+   height: 20px;
+   background-color: #3a3f36;
+   text-align: center;
+   border-radius: 50%;
+   color: #f99f1b;
+}
+
+.header__pricemob {
+   font-size: 14px;
+   font-family: "Langar", cursive;
+   font-weight: 400;
+   color: #2b2e29;
+}
+@media (min-width: 846px) {
+   .header__basketmob {
+      display: none;
+   }
+}

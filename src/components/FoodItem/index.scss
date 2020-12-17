@@ -1,0 +1,108 @@
+.food-block {
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   border: solid 2px #ebb25e3d;
+   border-radius: 20px;
+   margin: 10px;
+   padding: 10px;
+   @media (max-width: 845px) {
+      margin: 10px 5px;
+   }
+
+   &__image {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      min-height: auto;
+      padding-bottom: 10px;
+   }
+
+   &__info {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      a {
+         color: #000;
+      }
+   }
+   &__title {
+      font-weight: 500;
+      font-size: 30px;
+      text-align: right;
+      padding-right: 5px;
+   }
+
+   &__weight {
+      opacity: 0.6;
+      margin-bottom: 5px;
+   }
+   &__ingredients {
+      font-family: "Dancing Script", cursive;
+      text-align: center;
+      margin-bottom: 10px;
+   }
+
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 5px;
+   }
+   &__price {
+      font-size: 25px;
+      font-family: "Langar", cursive;
+      font-weight: 400;
+   }
+   &__btnAdd {
+      border: solid 2px #ebb25e;
+      padding: 0.5rem 0.5rem;
+      font-size: 2rem;
+      cursor: pointer;
+      align-self: center;
+      background: #deb27147;
+      transition: all 0.5s ease;
+      color: #41403e;
+      font-size: 20px;
+      letter-spacing: 1px;
+      outline: none;
+      box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+   }
+   &__btnAdd:hover {
+      box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+   }
+
+   &__btnLike {
+      background-color: transparent;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      transition-duration: 500ms;
+      svg {
+         fill: grey;
+      }
+   }
+   &__btnLike:hover {
+      svg {
+         fill: #b61616;
+      }
+   }
+   &__btnLike:active {
+      svg {
+         fill: #b61616;
+      }
+   }
+   &__btnLike-active {
+      background-color: transparent;
+      width: 40px;
+      height: 40px;
+      transition-duration: 500ms;
+      svg {
+         fill: #b61616;
+      }
+   }
+}
+.food-block img {
+   margin: 0 auto;
+}
